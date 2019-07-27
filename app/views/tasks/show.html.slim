@@ -1,0 +1,23 @@
+h1 タスクの詳細
+
+.nav.justify-content-end
+  = link_to '一覧', tasks_path, class: 'nav_link'
+table.table.table-hover
+  tbody
+    tr
+      th id
+      td= @task.id
+    tr
+      th 名称
+      td= @task.name
+    tr
+      th 詳細
+      td= @task.description
+    tr
+      th 作成日時
+      td= @task.created_at
+    tr
+      th 更新日時
+      td= @task.updated_at
+= link_to '編集', edit_task_path, class: 'btn btn-primary'
+= link_to '削除', @task, method: :delete, data: {confirm: "タスク「#{@task.name}」をお削除します。よろしいですか？"}, class: 'btn btn-danger'
