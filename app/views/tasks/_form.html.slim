@@ -9,5 +9,8 @@
     = f.text_field :name, class: 'form-control',id: 'task_name'
   .form-group
     = f.label :description
-    = f.text_area :description, class: 'form-control', id: 'task_name'
+    = f.text_area :description, class: 'form-control', id: 'task_description'
+  .form-group
+    = f.label :limit
+    = f.date_select :limit, class: 'date' , id: 'task_limit'
   = f.submit nil, class: 'btn btn-primary'
