@@ -6,19 +6,21 @@ application up and running.
 Things you may want to cover:
 
 データベース
+##Taskテーブル
 
-taskテーブル
 | Column | Type | Options |
 | ------ | ---- | ------- |
 | task_id | integer | null: false, foreign_key: true |
 | name | string | null: false, limit: 30 |
 | description | text |  |
 | limit | date |  |
+| state | integer |  |
 
 ### Association
 - belongs_to :user
 
-userテーブル
+## Userテーブル
+
 | Column | Type | Options |
 | ------ | ---- | ------- |
 | user_id | integer | null: false |
