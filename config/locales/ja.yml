@@ -1,4 +1,9 @@
 ja:
+  status:
+    task:
+      notstart: 未着手
+      launch: 着手
+      complete: 完了
   activerecord:
     errors:
       messages:
@@ -16,6 +21,7 @@ ja:
         limit: 終了期限
         created_at: 登録日時
         updated_at: 更新日時
+        status: 進行状況
     helpers:
       select:
         prompt: 選択してください
