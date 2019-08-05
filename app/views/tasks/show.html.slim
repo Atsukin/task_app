@@ -18,7 +18,7 @@ table.table.table-hover
       td= @task.limit
     tr
       th= Task.human_attribute_name(:status)
-      td= I18n.t @task.status
+      td= @task.status
     tr
       th= Task.human_attribute_name(:created_at)
       td= @task.created_at
