@@ -3039,3 +3039,2330 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.5ms)
 
 
+  [1m[35m (24.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (41.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddStatusToTasks (20190804101521)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (52.2ms)[0m  [1m[35mALTER TABLE "tasks" ADD "status" integer NOT NULL[0m
+  ↳ db/migrate/20190804101521_add_status_to_tasks.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddStatusToTasks (20190804101521)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "tasks" ADD "status" integer NOT NULL[0m
+  ↳ db/migrate/20190804101521_add_status_to_tasks.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddStatusToTasks (20190804101521)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7692156217679140725)[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddStatusToTasks (20190804101521)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7692156217679140725)[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddStatusToTasks (20190804101521)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddStatusToTasks (20190804101521)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddStatusToTasks (20190804101521)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (90.3ms)[0m  [1m[35mALTER TABLE "tasks" ADD "status" integer DEFAULT 0[0m
+  ↳ db/migrate/20190804101521_add_status_to_tasks.rb:3
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE  INDEX  "index_tasks_on_status" ON "tasks"  ("status")[0m
+  ↳ db/migrate/20190804101521_add_status_to_tasks.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190804101521"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7692156217679140725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-08-04 20:51:26 +0900
+  [1m[35m (41.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (44.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (318.6ms)
+Completed 200 OK in 662ms (Views: 601.6ms | ActiveRecord: 48.5ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 20:51:32 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (21.9ms)
+  Rendered tasks/new.html.slim within layouts/application (26.3ms)
+Completed 200 OK in 70ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-04 20:51:36 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aL1lxVyt7fcWcMDYTDC9pY1jlqgDSn7hwoufBDrZyXAftARAT62ILLNIhUUnlPF83wV6zpwHUb/s8yQI4NjT0w==", "task"=>{"name"=>"", "description"=>"", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"4", "status"=>"着手"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError ('着手' is not a valid status):
+  
+app/controllers/tasks_controller.rb:15:in `create'
+Started GET "/tasks/new" for ::1 at 2019-08-04 20:56:35 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.2ms)
+  Rendered tasks/new.html.slim within layouts/application (11.9ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 20:57:25 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (160.7ms)
+  Rendered tasks/new.html.slim within layouts/application (164.2ms)
+Completed 200 OK in 199ms (Views: 185.6ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-04 20:57:28 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3iDxQ8lIP0Qf61SkFkHF6xVMLqNXG/NMC0/gpKZKRuupKZDG2khan7rTETl95YkyRyrCxchW3BIlN1uofEtcSA==", "task"=>{"name"=>"", "description"=>"", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"4", "status"=>"1"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError ('1' is not a valid status):
+  
+app/controllers/tasks_controller.rb:15:in `create'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:08:13 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (5.9ms)
+  Rendered tasks/new.html.slim within layouts/application (9.5ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-04 21:08:15 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AVHNaVUfKT3wZR70f2q1ucu61NWxl2h9YFwuTpeg0PN2WKzsRh9M5lVdW2kUzvlgmdw4sy7aRyNOJJVCTaHKUA==", "task"=>{"name"=>"", "description"=>"", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"4", "status"=>"notstart"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (5.3ms)
+  Rendered tasks/new.html.slim within layouts/application (8.5ms)
+Completed 200 OK in 42ms (Views: 29.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-04 21:08:39 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"syE9o+u7mJV6dMYqebdHSVZdrWo4K3ZTlKtAXE4OFnLEKFwm+Lv9Tt9Mg7cSEwuQBDtBDKdmWQ260/tQlA8M0Q==", "task"=>{"name"=>"初めてのステータス追加", "description"=>"ステータスの追加を行いました。", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"4", "status"=>"notstart"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (42.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "初めてのステータス追加"], ["description", "ステータスの追加を行いました。"], ["created_at", "2019-08-04 21:08:39.226911"], ["updated_at", "2019-08-04 21:08:39.226911"], ["limit", "2019-08-04"]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 47ms (ActiveRecord: 43.1ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-04 21:08:39 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.7ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks/12" for ::1 at 2019-08-04 21:08:41 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (6.6ms)
+Completed 200 OK in 47ms (Views: 31.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/12" for ::1 at 2019-08-04 21:14:57 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (141.8ms)
+Completed 200 OK in 178ms (Views: 162.0ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/tasks/12" for ::1 at 2019-08-04 21:14:58 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (5.2ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-04 21:14:59 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (17.4ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:15:00 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.2ms)
+  Rendered tasks/new.html.slim within layouts/application (11.8ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:15:02 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.7ms)
+  Rendered tasks/new.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:15:16 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (50.5ms)
+  Rendered tasks/new.html.slim within layouts/application (54.9ms)
+Completed 200 OK in 88ms (Views: 75.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:15:17 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (16.9ms)
+  Rendered tasks/new.html.slim within layouts/application (20.4ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:15:18 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.4ms)
+  Rendered tasks/new.html.slim within layouts/application (10.7ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-04 21:15:21 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+xWByt33Jty5xI/KlNtii6WIZNtl3dpKhhXsLjQrNBuMHOBPzvdDBxz8ylf/fy5S9+6IvfqQ9RSobVci7iouuA==", "task"=>{"name"=>"", "description"=>"", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"4", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.0ms)
+  Rendered tasks/new.html.slim within layouts/application (11.5ms)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-04 21:15:27 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zKtueROAKbwILaMtakHp+gyF6w0M4Ajgv+dzJ0sLi/+7og/8AIBMZ60V5rAB5aUjXuMHa5OtJ76Rn8grkQqRXA==", "task"=>{"name"=>"タスク", "description"=>"タスク", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"4", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (40.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "タスク"], ["description", "タスク"], ["created_at", "2019-08-04 21:15:27.421429"], ["updated_at", "2019-08-04 21:15:27.421429"], ["limit", "2019-08-04"], ["status", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 46ms (ActiveRecord: 42.8ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-04 21:15:27 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.5ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks/13" for ::1 at 2019-08-04 21:15:29 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (8.4ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-04 21:18:09 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.3ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:18:11 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (293.6ms)
+  Rendered tasks/new.html.slim within layouts/application (298.5ms)
+Completed 500 Internal Server Error in 306ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `notstart' for #<#<Class:0x00007f9d39c8e370>:0x00007f9d3b83b730>):
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, ['未着手' => notstart, '着手' => launch, '完了' => complete] , class: 'select' , id: 'task_limit'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:18:in `block in _app_views_tasks__form_html_slim__3009528876096820329_70156628930700'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__3009528876096820329_70156628930700'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156642549860'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:18:32 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (348.6ms)
+  Rendered tasks/new.html.slim within layouts/application (353.7ms)
+Completed 500 Internal Server Error in 359ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `notstart' for #<#<Class:0x00007f9d39c8e370>:0x00007f9d38873c78>):
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, {'未着手' => notstart, '着手' => launch, '完了' => complete} , class: 'select' , id: 'task_limit'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:18:in `block in _app_views_tasks__form_html_slim__3009528876096820329_70156617748440'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__3009528876096820329_70156617748440'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156617518160'
+Started GET "/tasks" for ::1 at 2019-08-04 21:18:38 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.1ms)
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:18:39 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (351.6ms)
+  Rendered tasks/new.html.slim within layouts/application (360.9ms)
+Completed 500 Internal Server Error in 367ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `notstart' for #<#<Class:0x00007f9d39c8e370>:0x00007f9d388315f8>):
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, {'未着手' => notstart, '着手' => launch, '完了' => complete} , class: 'select' , id: 'task_limit'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:18:in `block in _app_views_tasks__form_html_slim__3009528876096820329_70156574112180'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__3009528876096820329_70156574112180'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156617358760'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:22:16 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (4.5ms)
+  Rendered tasks/new.html.slim within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 4.9ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+; @output_buffer.safe_concat((...
+^
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+; end; @output_buffer.safe_concat(...
+  ^~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156556930800'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:22:23 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (4.6ms)
+  Rendered tasks/new.html.slim within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+; @output_buffer.safe_concat((...
+^
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+; end; @output_buffer.safe_concat(...
+  ^~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156628911480'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:22:53 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (3.7ms)
+  Rendered tasks/new.html.slim within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+; @output_buffer.safe_concat((...
+^
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+; end; @output_buffer.safe_concat(...
+  ^~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156627209920'
+Started GET "/tasks" for ::1 at 2019-08-04 21:23:08 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (73.7ms)
+Completed 200 OK in 96ms (Views: 93.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:23:11 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (5.8ms)
+  Rendered tasks/new.html.slim within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+; @output_buffer.safe_concat((...
+^
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+; end; @output_buffer.safe_concat(...
+  ^~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156620350700'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:23:26 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (3.9ms)
+  Rendered tasks/new.html.slim within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+; @output_buffer.safe_concat((...
+^
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+; end; @output_buffer.safe_concat(...
+  ^~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/kyouakira/task_app/app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/tasks/_form.html.slim:19: syntax error, unexpected ';', expecting '('
+app/views/tasks/_form.html.slim:20: syntax error, unexpected keyword_end, expecting '}'
+app/views/tasks/_form.html.slim:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/tasks/_form.html.slim:23: syntax error, unexpected keyword_end, expecting ')'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156629903200'
+Started GET "/" for ::1 at 2019-08-04 21:30:27 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (7.4ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:30:28 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (10.1ms)
+  Rendered tasks/new.html.slim within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.statuses.keys.to_a, {} , class: 'select' , id: 'task_limit'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__3009528876096820329_70156627652440'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__3009528876096820329_70156627652440'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156619767000'
+Started GET "/" for ::1 at 2019-08-04 21:31:14 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (19.2ms)
+Completed 200 OK in 58ms (Views: 45.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 21:31:15 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (10.8ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:31:16 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (9.7ms)
+  Rendered tasks/new.html.slim within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.statuses.keys.to_a, {} , class: 'select' , id: 'task_limit'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__3009528876096820329_70156635017440'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__3009528876096820329_70156635017440'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__1415266621631764798_70156631883340'
+Started GET "/" for ::1 at 2019-08-04 21:31:28 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.6ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 21:32:18 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (113.1ms)
+Completed 200 OK in 388ms (Views: 375.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:32:19 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (21.1ms)
+  Rendered tasks/new.html.slim within layouts/application (26.1ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.statuses.keys.to_a, {} , class: 'select' , id: 'task_limit'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__730499901785129027_70306395782480'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__730499901785129027_70306395782480'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim___2206034222930058212_70306421214160'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:33:28 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (54.1ms)
+  Rendered tasks/new.html.slim within layouts/application (57.4ms)
+Completed 200 OK in 91ms (Views: 76.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:39:18 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.0ms)
+  Rendered tasks/new.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:39:21 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.1ms)
+  Rendered tasks/new.html.slim within layouts/application (9.9ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:39:27 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.0ms)
+  Rendered tasks/new.html.slim within layouts/application (10.6ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:39:29 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.2ms)
+  Rendered tasks/new.html.slim within layouts/application (10.0ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:39:32 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.2ms)
+  Rendered tasks/new.html.slim within layouts/application (10.8ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:39:43 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.6ms)
+  Rendered tasks/new.html.slim within layouts/application (11.6ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:39:54 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (107.0ms)
+  Rendered tasks/new.html.slim within layouts/application (117.0ms)
+Completed 200 OK in 359ms (Views: 344.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:40:09 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.5ms)
+  Rendered tasks/new.html.slim within layouts/application (12.0ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:40:11 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (8.0ms)
+  Rendered tasks/new.html.slim within layouts/application (12.5ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:40:11 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (9.6ms)
+  Rendered tasks/new.html.slim within layouts/application (14.9ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:40:25 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.5ms)
+  Rendered tasks/new.html.slim within layouts/application (20.1ms)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:40:26 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.0ms)
+  Rendered tasks/new.html.slim within layouts/application (10.4ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:40:26 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.2ms)
+  Rendered tasks/new.html.slim within layouts/application (10.3ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-04 21:40:55 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pW8+pTECnbMDRZ7lPP1tmQUOqtAQmlE/Zgz/JJ0nq+zSZl8gIgL4aKZ923hXWSFAV2hGto/XfmFIdEQoRyaxTw==", "task"=>{"name"=>"タスクを新規登録", "description"=>"新しいタスクの登録とステータスの追加を行いました。", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"4", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "タスクを新規登録"], ["description", "新しいタスクの登録とステータスの追加を行いました。"], ["created_at", "2019-08-04 21:40:55.444474"], ["updated_at", "2019-08-04 21:40:55.444474"], ["limit", "2019-08-04"], ["status", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (40.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 45ms (ActiveRecord: 40.9ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-04 21:40:55 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.6ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:52:26 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.3ms)
+  Rendered tasks/new.html.slim within layouts/application (12.4ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:55:20 +0900
+Processing by TasksController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:11: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/task.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/tasks_controller.rb:11:in `new'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:55:47 +0900
+Processing by TasksController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:10: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/task.rb:10: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/tasks_controller.rb:11:in `new'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:55:49 +0900
+Processing by TasksController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:10: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/task.rb:10: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/tasks_controller.rb:11:in `new'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:56:03 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (146.0ms)
+  Rendered tasks/new.html.slim within layouts/application (149.8ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 6.1ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231916479080'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231916479080'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231920926880'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:56:04 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.2ms)
+  Rendered tasks/new.html.slim within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231983071180'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231983071180'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231976035520'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:57:22 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (56.5ms)
+  Rendered tasks/new.html.slim within layouts/application (60.6ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/kyouakira/task_app/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 20 column 19>):
+     5: 
+     6: = form_with model: @task, local: true do |f|
+     7:   .form-group
+     8:     = f.label :name
+     9:     = f.text_field :name, class: 'form-control',id: 'task_name'
+    10:   .form-group
+    11:     = f.label :description
+  
+app/views/tasks/_form.html.slim:8:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231984466500'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231984466500'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231984481340'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:57:40 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (57.5ms)
+  Rendered tasks/new.html.slim within layouts/application (62.0ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231994029080'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231994029080'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70232001937620'
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:58:44 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.6ms)
+  Rendered tasks/new.html.slim within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231993800580'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231993800580'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231997926740'
+Started GET "/" for ::1 at 2019-08-04 21:58:49 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.0ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 21:58:50 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (8.6ms)
+  Rendered tasks/new.html.slim within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231998534420'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231998534420'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231998661680'
+Started GET "/tasks/new" for ::1 at 2019-08-04 22:00:11 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.2ms)
+  Rendered tasks/new.html.slim within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231980792400'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231980792400'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231981195720'
+Started GET "/tasks/new" for ::1 at 2019-08-04 22:02:41 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (8.3ms)
+  Rendered tasks/new.html.slim within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231974495840'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231974495840'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231974974100'
+Started GET "/" for ::1 at 2019-08-04 22:02:47 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.9ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 22:02:49 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (8.8ms)
+  Rendered tasks/new.html.slim within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231975465020'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231975465020'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231943052280'
+Started GET "/tasks/new" for ::1 at 2019-08-04 22:03:13 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (6.6ms)
+  Rendered tasks/new.html.slim within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231982722460'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231982722460'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231975741480'
+Started GET "/tasks/new" for ::1 at 2019-08-04 22:03:14 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.8ms)
+  Rendered tasks/new.html.slim within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    14:     = f.label :limit
+    15:     = f.date_select :limit, class: 'date' , id: 'task_limit'
+    16:   .form-group
+    17:     = f.label :status
+    18:     = f.select :status, Task.localed_statuses, {} , class: 'select', id: 'status'
+    19:   = f.submit nil, class: 'btn btn-primary'
+  
+app/views/tasks/_form.html.slim:17:in `block in _app_views_tasks__form_html_slim__1968833713003506681_70231983098520'
+app/views/tasks/_form.html.slim:6:in `_app_views_tasks__form_html_slim__1968833713003506681_70231983098520'
+app/views/tasks/new.html.slim:6:in `_app_views_tasks_new_html_slim__2461685177575458827_70231983185200'
+Started GET "/tasks/new" for ::1 at 2019-08-04 22:04:40 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (56.2ms)
+  Rendered tasks/new.html.slim within layouts/application (60.1ms)
+Completed 200 OK in 95ms (Views: 81.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 22:06:13 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (60.6ms)
+  Rendered tasks/new.html.slim within layouts/application (71.4ms)
+Completed 200 OK in 108ms (Views: 94.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-04 22:07:14 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (85.6ms)
+  Rendered tasks/new.html.slim within layouts/application (90.1ms)
+Completed 200 OK in 141ms (Views: 127.3ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-04 22:07:21 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sZSLk7m5RNxnr4cdO7OTsX+ZTOdxneD+/yr2PR+lByzGneoWqrkhB8KXwoBQF99oLf+gge7Qz6DRUk0xxaQdjw==", "task"=>{"name"=>"", "description"=>"", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"4", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.3ms)
+  Rendered tasks/new.html.slim within layouts/application (12.3ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 23:52:15 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.7ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 23:58:44 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.9ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-05 00:15:33 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.2ms)
+  Rendered tasks/new.html.slim within layouts/application (11.8ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 00:17:25 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.6ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 00:17:26 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/14" for ::1 at 2019-08-05 00:17:27 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 48ms (Views: 32.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/13" for ::1 at 2019-08-05 00:17:32 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (8.9ms)
+Completed 200 OK in 48ms (Views: 35.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/12" for ::1 at 2019-08-05 00:17:34 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (8.4ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-05 00:17:36 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (10.4ms)
+  Rendered tasks/new.html.slim within layouts/application (15.4ms)
+Completed 200 OK in 68ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-05 00:17:56 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qoesuQBPQhBikvYOo7L/evCSZQb08ud1dvJBGTnjqpDdjs08E08ny8eqs5PIFrOjovSJYGu/yCtYivoV4+KwMw==", "task"=>{"name"=>"着手の登録", "description"=>"これから新しいタスクを紹介していきます\r\n", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (42.1ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "着手の登録"], ["description", "これから新しいタスクを紹介していきます\r\n"], ["created_at", "2019-08-05 00:17:56.729067"], ["updated_at", "2019-08-05 00:17:56.729067"], ["limit", "2019-08-05"], ["status", "着手"]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 42.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "着手"
+: INSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/controllers/tasks_controller.rb:16:in `create'
+Started POST "/tasks" for ::1 at 2019-08-05 00:18:43 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"upKEYne6QBqJUuyo19ivAhUwmnvPZnb770rGWVCmrd3Nm+XnZLolwSxqqTW8fOPbR1Z2HVArWaXBMn1Viqe3fg==", "task"=>{"name"=>"着手の登録", "description"=>"これから新しいタスクを紹介していきます\r\n", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (1.0ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "着手の登録"], ["description", "これから新しいタスクを紹介していきます\r\n"], ["created_at", "2019-08-05 00:18:43.615390"], ["updated_at", "2019-08-05 00:18:43.615390"], ["limit", "2019-08-05"], ["status", "着手"]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "着手"
+: INSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/controllers/tasks_controller.rb:16:in `create'
+Started POST "/tasks" for ::1 at 2019-08-05 00:24:12 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"upKEYne6QBqJUuyo19ivAhUwmnvPZnb770rGWVCmrd3Nm+XnZLolwSxqqTW8fOPbR1Z2HVArWaXBMn1Viqe3fg==", "task"=>{"name"=>"着手の登録", "description"=>"これから新しいタスクを紹介していきます\r\n", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (0.9ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "着手の登録"], ["description", "これから新しいタスクを紹介していきます\r\n"], ["created_at", "2019-08-05 00:24:12.620841"], ["updated_at", "2019-08-05 00:24:12.620841"], ["limit", "2019-08-05"], ["status", "着手"]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "着手"
+: INSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/controllers/tasks_controller.rb:16:in `create'
+Started GET "/tasks/new" for ::1 at 2019-08-05 08:59:25 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (27.0ms)
+  Rendered tasks/new.html.slim within layouts/application (52.8ms)
+Completed 200 OK in 144ms (Views: 122.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-05 08:59:26 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5cejSjNi0unvc+SpB2FlM4/bFv5OyjSFj4NN70WPEHmSzsLPIGK3MkpLoTRsxSnq3b36mNGHG9uh+/bjn44K2g==", "task"=>{"name"=>"", "description"=>"", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"notstart"}, "commit"=>"登録する"}
+  [1m[35m (40.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (42.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (10.3ms)
+  Rendered tasks/new.html.slim within layouts/application (14.0ms)
+Completed 200 OK in 142ms (Views: 47.5ms | ActiveRecord: 82.9ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-05 08:59:34 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IcGd1GJLf/T1+UuyTjkMiC+Exi4zrtvCg2bteKF9ujhWyPxRcUsaL1DBDi8lnUBRfeIqSKzj9JytHlZ0e3ygmw==", "task"=>{"name"=>"タスク　", "description"=>"タスク", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"notstart"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (43.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "タスク　"], ["description", "タスク"], ["created_at", "2019-08-05 08:59:35.000892"], ["updated_at", "2019-08-05 08:59:35.000892"], ["limit", "2019-08-05"], ["status", "未着手"]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 43.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "未着手"
+: INSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/controllers/tasks_controller.rb:16:in `create'
+Started GET "/tasks" for ::1 at 2019-08-05 08:59:46 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (13.9ms)
+Completed 200 OK in 68ms (Views: 64.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 09:06:21 +0900
+  
+SyntaxError (/Users/kyouakira/task_app/app/controllers/tasks_controller.rb:46: no .<digit> floating literal anymore; put 0 before dot
+      status.1
+            ^
+/Users/kyouakira/task_app/app/controllers/tasks_controller.rb:46: syntax error, unexpected tINTEGER, expecting '('
+      status.1
+             ^):
+  
+app/controllers/tasks_controller.rb:46: no .<digit> floating literal anymore; put 0 before dot
+app/controllers/tasks_controller.rb:46: syntax error, unexpected tINTEGER, expecting '('
+Started GET "/" for ::1 at 2019-08-05 09:06:39 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (17.6ms)
+Completed 200 OK in 53ms (Views: 38.3ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-05 09:06:41 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (9.6ms)
+  Rendered tasks/new.html.slim within layouts/application (15.7ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-05 09:06:48 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0igZYvPtiQU7h1vclD438ilYQzqZ/4vsnr+qtjBNpEylIXjn4O3s3p6/HkH/mnsrez6vXAaypLKwxxG66ky+7w==", "task"=>{"name"=>"task", "description"=>"タスク", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"launch"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `status' for nil:NilClass):
+  
+app/controllers/tasks_controller.rb:45:in `task_params'
+app/controllers/tasks_controller.rb:15:in `create'
+Started POST "/tasks" for ::1 at 2019-08-05 09:07:24 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9+J/DOhXtaPH4dVOiFKZL5kdo0QGZ5QtVOuVoSC95RKA6x6J+1fQeGLZkNPj9tX2y3tPIpkqu3N6ky6t+rz/sQ==", "task"=>{"name"=>"task", "description"=>"タスク", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"launch"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `task' for #<TasksController:0x00007fc04da20c50>):
+  
+app/controllers/tasks_controller.rb:45:in `task_params'
+app/controllers/tasks_controller.rb:15:in `create'
+Started POST "/tasks" for ::1 at 2019-08-05 09:07:47 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9+J/DOhXtaPH4dVOiFKZL5kdo0QGZ5QtVOuVoSC95RKA6x6J+1fQeGLZkNPj9tX2y3tPIpkqu3N6ky6t+rz/sQ==", "task"=>{"name"=>"task", "description"=>"タスク", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (0.9ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "task"], ["description", "タスク"], ["created_at", "2019-08-05 09:07:47.584903"], ["updated_at", "2019-08-05 09:07:47.584903"], ["limit", "2019-08-05"], ["status", "着手"]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "着手"
+: INSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/controllers/tasks_controller.rb:16:in `create'
+Started GET "/" for ::1 at 2019-08-05 09:45:57 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (16.9ms)
+Completed 200 OK in 62ms (Views: 48.7ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-05 09:45:59 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (10.0ms)
+  Rendered tasks/new.html.slim within layouts/application (14.7ms)
+Completed 200 OK in 74ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-05 09:46:04 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xoMGVCCfTCAQgyGvMEK0j7nx/VncJ713BYJkDTRk6AiximfRM58p+7W7ZDJb5vhW65cRP0Nqkikr+t8B7mXyqw==", "task"=>{"name"=>"task", "description"=>"task", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"notstart"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/controllers/tasks_controller.rb:45:in `slice'
+app/controllers/tasks_controller.rb:45:in `task_params'
+app/controllers/tasks_controller.rb:15:in `create'
+Started GET "/" for ::1 at 2019-08-05 09:46:19 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.4ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 11:20:21 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (154.3ms)
+Completed 200 OK in 199ms (Views: 185.1ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-05 11:20:24 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (8.9ms)
+  Rendered tasks/new.html.slim within layouts/application (13.3ms)
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-05 11:20:26 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kUrK0KVkbALQYI1ezO8NM2Qr3GjFE7Po7zmasc3IBqjmQ6tVtmQJ2XVYyMOnS0HqNk0wDlpenLbBQSG9F8kcCw==", "task"=>{"name"=>"", "description"=>"", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (8.2ms)
+  Rendered tasks/new.html.slim within layouts/application (12.8ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-05 11:20:34 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j54G1lwNg7rjfgqzKd1ZLUO8Jr0ueGGy/CsWKto4No/4l2dTTw3mYUZGTy5CeRX0EdrK27E1TuzSU60mADksLA==", "task"=>{"name"=>"task", "description"=>"description\r\n", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"launch"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (40.9ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "task"], ["description", "description\r\n"], ["created_at", "2019-08-05 11:20:34.359457"], ["updated_at", "2019-08-05 11:20:34.359457"], ["limit", "2019-08-05"], ["status", "着手"]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 41.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "着手"
+: INSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/controllers/tasks_controller.rb:16:in `create'
+Started GET "/tasks" for ::1 at 2019-08-05 11:22:27 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (76.0ms)
+Completed 200 OK in 104ms (Views: 95.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:23:37 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (15.7ms)
+Completed 200 OK in 45ms (Views: 37.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-08-05 11:23:39 +0900
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (11.9ms)
+  Rendered tasks/new.html.slim within layouts/application (17.3ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2019-08-05 11:23:45 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CQwqvI6pLX+ebkTaMxywAYUZyVjaAB+qw6H2BP5XrG9+BUs5nalIpDtWAUdYuPzY138lPkVNMPTt2U0IJFa2zA==", "task"=>{"name"=>"task", "description"=>"description", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"notstart"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[36mTask Create (44.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at", "limit") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "task"], ["description", "description"], ["created_at", "2019-08-05 11:23:45.963787"], ["updated_at", "2019-08-05 11:23:45.963787"], ["limit", "2019-08-05"]]
+  ↳ app/controllers/tasks_controller.rb:16
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:16
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 50ms (ActiveRecord: 46.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:23:46 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.5ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:23:48 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.8ms)
+Completed 200 OK in 50ms (Views: 44.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:24:08 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (51.8ms)
+Completed 200 OK in 86ms (Views: 71.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:24:09 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:24:10 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.3ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:24:10 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (6.9ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15/edit" for ::1 at 2019-08-05 11:24:11 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:24
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.0ms)
+  Rendered tasks/edit.html.slim within layouts/application (12.3ms)
+Completed 200 OK in 53ms (Views: 41.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/tasks/15/edit" for ::1 at 2019-08-05 11:24:15 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:24
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (65.9ms)
+  Rendered tasks/edit.html.slim within layouts/application (69.7ms)
+Completed 200 OK in 110ms (Views: 94.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:24:16 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (11.5ms)
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15/edit" for ::1 at 2019-08-05 11:24:18 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:24
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (11.5ms)
+  Rendered tasks/edit.html.slim within layouts/application (17.8ms)
+Completed 200 OK in 71ms (Views: 67.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/tasks/15" for ::1 at 2019-08-05 11:24:21 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NrznC+JtT3eD/AWeyLYQ63/dHe//k6u5iTptP8Sll+9BtYaO8W0qrCbEQAOjElwyLbvxiWDehOenQtYzHqSNTA==", "task"=>{"name"=>"task", "description"=>"description", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"notstart"}, "commit"=>"更新する", "id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:29
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:24:21 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (16.4ms)
+Completed 200 OK in 66ms (Views: 62.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:24:23 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (11.9ms)
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/15/edit" for ::1 at 2019-08-05 11:24:25 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:24
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (8.9ms)
+  Rendered tasks/edit.html.slim within layouts/application (14.2ms)
+Completed 200 OK in 52ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/tasks/15" for ::1 at 2019-08-05 11:24:27 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w/0o+1oUtHgICZkQCSnNVhGGl14gCBSPks0Ro7Sr1Ai09El+SRTRo60x3I1ijYGPQ+B7OL9FO9G8taqvbqrOqw==", "task"=>{"name"=>"task", "description"=>"description", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"complete"}, "commit"=>"更新する", "id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:29
+  [1m[36mTask Update (0.4ms)[0m  [1m[33mUPDATE "tasks" SET "status" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["status", 2], ["updated_at", "2019-08-05 11:24:27.790463"], ["id", 15]]
+  ↳ app/controllers/tasks_controller.rb:29
+  [1m[35m (39.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:29
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 52ms (ActiveRecord: 40.4ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:24:27 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.1ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:24:29 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.4ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:25:01 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (57.9ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/kyouakira/task_app/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 25 column 19>):
+     5: table.table.table-hover
+     6:   tbody
+     7:     tr
+     8:       th= Task.human_attribute_name(:id)
+     9:       td= @task.id
+    10:     tr
+    11:       th= Task.human_attribute_name(:name)
+  
+app/views/tasks/show.html.slim:8:in `_app_views_tasks_show_html_slim___1248533212746020300_70231917201300'
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:25:04 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (66.8ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/kyouakira/task_app/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 25 column 19>):
+     5: table.table.table-hover
+     6:   tbody
+     7:     tr
+     8:       th= Task.human_attribute_name(:id)
+     9:       td= @task.id
+    10:     tr
+    11:       th= Task.human_attribute_name(:name)
+  
+app/views/tasks/show.html.slim:8:in `_app_views_tasks_show_html_slim___1248533212746020300_70231920900620'
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:25:12 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (60.0ms)
+Completed 200 OK in 101ms (Views: 82.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/tasks/15/edit" for ::1 at 2019-08-05 11:26:48 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:24
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (8.3ms)
+  Rendered tasks/edit.html.slim within layouts/application (12.9ms)
+Completed 200 OK in 47ms (Views: 42.6ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/tasks/15" for ::1 at 2019-08-05 11:26:50 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hQKeSXjwLGw5ISSFCE6eRSW6Jz+Bc4BS0lKwYay8cHbyC//Ma/BJt5wZYRhj6tKcd9zLWR4+rwz8Kgttdr1q1Q==", "task"=>{"name"=>"task", "description"=>"description", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"complete"}, "commit"=>"更新する", "id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:29
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 15ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:26:50 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.8ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:29:49 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (56.5ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/kyouakira/task_app/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 4 column 13>):
+     5: table.table.table-chromedriver
+     6:   thread.thread-default
+     7:     tr
+     8:       th= Task.human_attribute_name(:name)
+     9:       th= Task.human_attribute_name(:created_at)
+    10:       th= Task.human_attribute_name(:limit)
+    11:       th
+  
+app/views/tasks/index.html.slim:8:in `_app_views_tasks_index_html_slim__3418829004763000581_70231997841840'
+Started GET "/tasks/15/edit" for ::1 at 2019-08-05 11:30:00 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:24
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (69.2ms)
+  Rendered tasks/edit.html.slim within layouts/application (73.2ms)
+Completed 200 OK in 115ms (Views: 100.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:30:01 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (10.9ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:30:02 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (22.7ms)
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:30:03 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (18.4ms)
+Completed 200 OK in 63ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:30:42 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (14.8ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:30:44 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:30:44 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `status_i18n' for #<Task:0x00007fc05214adb0>
+Did you mean?  status):
+    18:       td= @task.limit
+    19:     tr
+    20:       th= Task.human_attribute_name(:status)
+    21:       td= @task.status_i18n
+    22:     tr
+    23:       th= Task.human_attribute_name(:created_at)
+    24:       td= @task.created_at
+  
+app/views/tasks/show.html.slim:21:in `_app_views_tasks_show_html_slim___1248533212746020300_70231993765240'
+Started GET "/tasks" for ::1 at 2019-08-05 11:32:09 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.5ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:32:23 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.5ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:32:24 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (9.9ms)
+Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/15/edit" for ::1 at 2019-08-05 11:32:26 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:24
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.5ms)
+  Rendered tasks/edit.html.slim within layouts/application (12.6ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/tasks/15" for ::1 at 2019-08-05 11:32:28 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XIVF98tumUJtZWDWJQpw9gSSg/5VXZ5eEGlrdSz3FgorjCRy2G78mchdJUtOrjwvVvRvmMoQsQA+EdB59vYMqQ==", "task"=>{"name"=>"task", "description"=>"description", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"complete"}, "commit"=>"更新する", "id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:29
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:32:28 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.9ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:32:29 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (10.0ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:32:52 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:32:53 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.6ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:32:55 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 44ms (Views: 39.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:32:55 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (8.9ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:32:57 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.9ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:33:02 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.7ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:33:03 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:33:03 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (6.2ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:33:03 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:33:31 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Object must be a Date, DateTime or Time object. "complete" given.):
+    18:       td= @task.limit
+    19:     tr
+    20:       th= Task.human_attribute_name(:status)
+    21:       td= I18n.l @task.status
+    22:     tr
+    23:       th= Task.human_attribute_name(:created_at)
+    24:       td= @task.created_at
+  
+app/views/tasks/show.html.slim:21:in `_app_views_tasks_show_html_slim___1248533212746020300_70231974051920'
+Started GET "/tasks/15/edit" for ::1 at 2019-08-05 11:33:47 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:24
+  Rendering tasks/edit.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (7.5ms)
+  Rendered tasks/edit.html.slim within layouts/application (11.9ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/tasks/15" for ::1 at 2019-08-05 11:33:48 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G9BP6slAw1/iIGlW3eTb2HrH9y+HhsLy1gtCjvD6Gnls2S5v2kCmhEcYLMu2QJcBKKEbSRjL7az4c/mCKvsA2g==", "task"=>{"name"=>"task", "description"=>"description", "limit(1i)"=>"2019", "limit(2i)"=>"8", "limit(3i)"=>"5", "status"=>"complete"}, "commit"=>"更新する", "id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:29
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:33:48 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.5ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:33:50 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (8.1ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:43:20 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (68.4ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 5.4ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/kyouakira/task_app/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 25 column 18>):
+     5: table.table.table-hover
+     6:   tbody
+     7:     tr
+     8:       th= Task.human_attribute_name(:id)
+     9:       td= @task.id
+    10:     tr
+    11:       th= Task.human_attribute_name(:name)
+  
+app/views/tasks/show.html.slim:8:in `_app_views_tasks_show_html_slim___1248533212746020300_70231974710800'
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:43:30 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (75.7ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/kyouakira/task_app/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 25 column 18>):
+     5: table.table.table-hover
+     6:   tbody
+     7:     tr
+     8:       th= Task.human_attribute_name(:id)
+     9:       td= @task.id
+    10:     tr
+    11:       th= Task.human_attribute_name(:name)
+  
+app/views/tasks/show.html.slim:8:in `_app_views_tasks_show_html_slim___1248533212746020300_70231916971400'
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:49:09 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (68.3ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 5.2ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    17:       th= Task.human_attribute_name(:limit)
+    18:       td= @task.limit
+    19:     tr
+    20:       th= Task.human_attribute_name(:status)
+    21:       td= I18n.t @task.status
+    22:     tr
+    23:       th= Task.human_attribute_name(:created_at)
+  
+app/views/tasks/show.html.slim:20:in `_app_views_tasks_show_html_slim___1248533212746020300_70231975795460'
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:49:11 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (translation data {:notstart=>"未着手", :launch=>"着手", :complete=>"完了"} can not be used with :count => 1. key 'other' is missing.):
+    17:       th= Task.human_attribute_name(:limit)
+    18:       td= @task.limit
+    19:     tr
+    20:       th= Task.human_attribute_name(:status)
+    21:       td= I18n.t @task.status
+    22:     tr
+    23:       th= Task.human_attribute_name(:created_at)
+  
+app/views/tasks/show.html.slim:20:in `_app_views_tasks_show_html_slim___1248533212746020300_70231917139400'
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:49:22 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (61.2ms)
+Completed 200 OK in 111ms (Views: 95.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:50:21 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (115.0ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/kyouakira/task_app/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 25 column 15>):
+     5: table.table.table-hover
+     6:   tbody
+     7:     tr
+     8:       th= Task.human_attribute_name(:id)
+     9:       td= @task.id
+    10:     tr
+    11:       th= Task.human_attribute_name(:name)
+  
+app/views/tasks/show.html.slim:8:in `_app_views_tasks_show_html_slim___1248533212746020300_70231997405360'
+Started GET "/tasks" for ::1 at 2019-08-05 11:50:41 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (75.8ms)
+Completed 200 OK in 112ms (Views: 103.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-05 11:50:42 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.1ms)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:50:43 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 48ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:50:44 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:50:45 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (7.0ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 11:51:01 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (57.0ms)
+Completed 200 OK in 103ms (Views: 89.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 12:25:19 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (293.6ms)
+Completed 500 Internal Server Error in 301ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `i18n' for #<#<Class:0x00007fc04fec2540>:0x00007fc052a7a188>):
+    18:       td= @task.limit
+    19:     tr
+    20:       th= Task.human_attribute_name(:status)
+    21:       td= i18n.t :@task.status
+    22:     tr
+    23:       th= Task.human_attribute_name(:created_at)
+    24:       td= @task.created_at
+  
+app/views/tasks/show.html.slim:21:in `_app_views_tasks_show_html_slim___1248533212746020300_70231998584160'
+Started GET "/tasks/15" for ::1 at 2019-08-05 12:25:38 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `status' for :@task:Symbol):
+    18:       td= @task.limit
+    19:     tr
+    20:       th= Task.human_attribute_name(:status)
+    21:       td= I18n.t :@task.status
+    22:     tr
+    23:       th= Task.human_attribute_name(:created_at)
+    24:       td= @task.created_at
+  
+app/views/tasks/show.html.slim:21:in `_app_views_tasks_show_html_slim___1248533212746020300_70231974054400'
+Started GET "/tasks/15" for ::1 at 2019-08-05 12:25:40 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `status' for :@task:Symbol):
+    18:       td= @task.limit
+    19:     tr
+    20:       th= Task.human_attribute_name(:status)
+    21:       td= I18n.t :@task.status
+    22:     tr
+    23:       th= Task.human_attribute_name(:created_at)
+    24:       td= @task.created_at
+  
+app/views/tasks/show.html.slim:21:in `_app_views_tasks_show_html_slim___1248533212746020300_70231984354580'
+Started GET "/tasks" for ::1 at 2019-08-05 12:25:50 +0900
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (9.4ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/15" for ::1 at 2019-08-05 12:25:52 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (288.9ms)
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `task' for #<#<Class:0x00007fc04fec2540>:0x00007fc04ff41340>
+Did you mean?  @task):
+    18:       td= @task.limit
+    19:     tr
+    20:       th= Task.human_attribute_name(:status)
+    21:       td= I18n.t task.status
+    22:     tr
+    23:       th= Task.human_attribute_name(:created_at)
+    24:       td= @task.created_at
+  
+app/views/tasks/show.html.slim:21:in `_app_views_tasks_show_html_slim___1248533212746020300_70231975923260'
+Started GET "/tasks/15" for ::1 at 2019-08-05 12:26:04 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (5.8ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
