@@ -39,9 +39,15 @@ class TasksController < ApplicationController
     redirect_to tasks_url,notice: "タスク「#{task.name}」を削除しました。"
   end
 
+  def search
+    @tasks = Task.search(params[:q])
+    render "index"
+  end
+
   private
 
   def task_params
     params.require(:task).permit(:name,:description,:limit,:status)
   end
+
 end

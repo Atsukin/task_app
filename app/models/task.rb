@@ -9,4 +9,14 @@ class Task < ApplicationRecord
       end
     end
   end
+  class << self
+        def search(query)
+            rel = order("name")
+            if query.present?
+                rel = rel.where("name LIKE ? OR description LIKE ?",
+                "%#{query}%","%#{query}%")
+            end
+            rel
+        end
+    end
 end
