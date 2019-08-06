@@ -1,6 +1,14 @@
 h1 タスク一覧
 = link_to '新規登録', new_task_path, class: 'btn btn-primary'
 
+h2 検索
+= form_tag("/tasks/search", method: "get") do
+  = label_tag(:q, "Search for:")
+  = text_field_tag(:q)
+  = submit_tag("Search")
+end
+
+
 .mb-3
 table.table.table-chromedriver
   thread.thread-default
