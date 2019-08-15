@@ -1,6 +1,16 @@
 class TasksController < ApplicationController
   def index
-    @tasks = Task.order(created_at: "DESC")
+    @tasks = Task.all
+
+    search_word = params[:word].presence
+    @tasks = @tasks.where("name LIKE ?","%#{search_word}") if search_word
+    if params[:status].present?
+      @tasks = @tasks.where(status: params[:status])
+    else
+      @tasks = @tasks.all
+    end
+
+    @tasks = @tasks.order(created_at: :desc)
   end
 
   def show
