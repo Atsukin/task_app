@@ -2,9 +2,12 @@ h1 タスク一覧
 = link_to '新規登録', new_task_path, class: 'btn btn-primary'
 
 h2 検索
-= form_tag("/tasks/search", method: "get") do
-  = label_tag(:q, "Search for:")
-  = select_tag :q, options_for_select([["未着手","0"], ["着手","1"], ["完了","2"]],:selected=>"3")
+= form_tag(root_path, method: "get") do
+  = label_tag(:word)
+  = text_field_tag :word
+  br
+  = label_tag(:status)
+  = select_tag :status, options_for_select([ ["未選択",nil],["未着手","0"], ["着手","1"], ["完了","2"]],:selected=>"3")
   br
   = submit_tag("Search")
 end
