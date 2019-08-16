@@ -10915,3 +10915,13 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/?order=priority" for ::1 at 2019-08-16 11:39:26 +0900
+Processing by TasksController#index as HTML
+  Parameters: {"order"=>"priority"}
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."priority" ASC, "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.slim:28
+  Rendered tasks/index.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 1.2ms)
+
+
