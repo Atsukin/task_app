@@ -10,6 +10,15 @@ class TasksController < ApplicationController
       @tasks = @tasks.all
     end
 
+    case params[:order]
+      when 'limit'
+        @tasks = @tasks.order(limit: :desc)
+      when 'created_at'
+        @tasks = @tasks.order(create_at: :desc)
+      when 'status'
+        @tasks = @tasks.order(status: :desc)
+    end
+
     @tasks = @tasks.order(created_at: :desc)
   end
 
