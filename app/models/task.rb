@@ -1,8 +1,12 @@
 class Task < ApplicationRecord
   validates :name, presence: true
   validates :name, length: { maximum: 30 }
+
+  belongs_to :user
+
   enum status: { notstart: 0, launch: 1, complete: 2 }
   enum priority: { high: 0, middle: 1, low: 2 }
+
     class << self
     def localed_priorities
       priorities.keys.map do |s|
