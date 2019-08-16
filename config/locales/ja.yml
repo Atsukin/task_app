@@ -1,9 +1,24 @@
 ja:
-  status:
+  enums:
     task:
-      notstart: 未着手
-      launch: 着手
-      complete: 完了
+      priority:
+        high: 高
+        middle: 中
+        low: 低
+      status:
+        notstart: 未着手
+        launch: 着手
+        complete: 完了
+    priority:
+      task:
+        high: 高
+        middle: 中
+        low: 低
+    status:
+      task:
+        notstart: 未着手
+        launch: 着手
+        complete: 完了
   activerecord:
     errors:
       messages:
@@ -22,6 +37,7 @@ ja:
         created_at: 登録日時
         updated_at: 更新日時
         status: 進行状況
+        priority: 優先順位
     helpers:
       select:
         prompt: 選択してください

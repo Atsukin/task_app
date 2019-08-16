@@ -17,6 +17,8 @@ class TasksController < ApplicationController
         @tasks = @tasks.order(create_at: :desc)
       when 'status'
         @tasks = @tasks.order(status: :desc)
+      when 'priority'
+        @tasks = @tasks.order(priority: :asc)
     end
 
     @tasks = @tasks.order(created_at: :desc)
@@ -66,7 +68,7 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:name,:description,:limit,:status)
+    params.require(:task).permit(:name,:description,:limit,:status,:priority)
   end
 
 end
