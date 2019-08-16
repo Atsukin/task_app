@@ -21,7 +21,7 @@ class TasksController < ApplicationController
         @tasks = @tasks.order(priority: :asc)
     end
 
-    @tasks = @tasks.order(created_at: :desc)
+    @tasks = @tasks.order(created_at: :desc).page(params[:page])
   end
 
   def show
