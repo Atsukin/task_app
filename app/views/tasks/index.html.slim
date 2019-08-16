@@ -1,25 +1,27 @@
-h1 タスク一覧
-= link_to '新規登録', new_task_path, class: 'btn btn-primary'
-
 h2 検索
 = form_tag(root_path, method: "get") do
-  = label_tag(:word)
-  = text_field_tag :word
-  br
-  = label_tag(:status)
-  = select_tag :status, options_for_select([ ["未選択",nil],["未着手","0"], ["着手","1"], ["完了","2"]],:selected=>"3")
-  br
-  = submit_tag("Search")
+  .form-group.row
+    = label_tag(:word)
+    = text_field_tag :word ,'', class: 'form-control'
+  .form-group.row
+    = label_tag(:status)
+    = select_tag :status, options_for_select([ ["未選択",nil],["未着手","0"], ["着手","1"], ["完了","2"]],:selected=>"3") ,class: 'form-control'
+  .form-group
+    = button_tag 'Search', class: 'btn btn-outline-primary mb-5'
 end
 
+h1.mb-5 タスク一覧
+
+= link_to '新規登録', new_task_path, class: 'btn btn-primary mb-5'
 
 .mb-3
 table.table.table-chromedriver
   thread.thread-default
     tr
       th= Task.human_attribute_name(:name)
-      th= Task.human_attribute_name(:created_at)
-      th= Task.human_attribute_name(:limit)
+      th= link_to :create_at, root_path(order: :create_at)
+      th= link_to :limit, root_path(order: :limit)
+      th= Task.human_attribute_name(:status)
       th
   tbody
     - @tasks.each do |task|
@@ -27,6 +29,7 @@ table.table.table-chromedriver
         td= link_to task.name, task_path(task)
         td= task.created_at
         td= task.limit
+        td= task.status
         td
           = link_to '編集', edit_task_path(task), class: 'btn btn-primary'
           = link_to '削除', task, method: :delete, data: {confirm: "タスク「#{task.name}」をお削除します。よろしいですか？"}, class: 'btn btn-danger'
