@@ -12324,3 +12324,340 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 60ms (Views: 54.1ms | ActiveRecord: 2.3ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "admin") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "admin"], ["email", "admin@example.com"], ["password_digest", "$2a$12$HXtQl9PFc48GWiRNpbj2neQcF.O6jvY5m.tV4ISLHotDwUJM3ntca"], ["created_at", "2019-08-16 21:37:43.524616"], ["updated_at", "2019-08-16 21:37:43.524616"], ["admin", true]]
+  ↳ db/seeds.rb:1
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+Started GET "/login" for ::1 at 2019-08-16 21:37:58 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (14.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 300ms (Views: 291.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/login" for ::1 at 2019-08-16 21:37:58 +0900
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-08-16 21:38:03 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lgo0mC44BqHaEhckCyEmolpxxHD2BTiMJfnedvXdOOGstOvXMYoUlf2Kx5qLV6xCD5hwRDZCI3ONESrhelmL7w==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-16 21:38:03 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 6], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 6], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (74.0ms)
+Completed 200 OK in 141ms (Views: 126.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-16 21:38:31 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 6], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 6], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (11.6ms)
+Completed 200 OK in 53ms (Views: 35.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-08-16 21:38:32 +0900
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering admin/users/index.html.slim within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/admin/users/index.html.slim:16
+  Rendered admin/users/index.html.slim within layouts/application (9.9ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/users/6" for ::1 at 2019-08-16 21:38:36 +0900
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w2nreaeX4kIBmXoX+IIHdprHmMWnprp8eXWXGmaFVJH51zQ2uCXwdiYBqql49I2Wzy4s8WfhoYPRnWON6QHnnw==", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT COUNT({:admin=>true}) FROM "users"[0m
+  ↳ app/models/user.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 7.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near "{"
+LINE 1: SELECT COUNT({:admin=>true}) FROM "users"
+                     ^
+: SELECT COUNT({:admin=>true}) FROM "users"):
+  
+app/models/user.rb:12:in `confirm_none_admin_user'
+app/controllers/admin/users_controller.rb:41:in `destroy'
+Started DELETE "/admin/users/6" for ::1 at 2019-08-16 21:39:20 +0900
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w2nreaeX4kIBmXoX+IIHdprHmMWnprp8eXWXGmaFVJH51zQ2uCXwdiYBqql49I2Wzy4s8WfhoYPRnWON6QHnnw==", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT({:admin=>:true}) FROM "users"[0m
+  ↳ app/models/user.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 3.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near "{"
+LINE 1: SELECT COUNT({:admin=>:true}) FROM "users"
+                     ^
+: SELECT COUNT({:admin=>:true}) FROM "users"):
+  
+app/models/user.rb:12:in `confirm_none_admin_user'
+app/controllers/admin/users_controller.rb:41:in `destroy'
+Started DELETE "/admin/users/6" for ::1 at 2019-08-16 21:39:35 +0900
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w2nreaeX4kIBmXoX+IIHdprHmMWnprp8eXWXGmaFVJH51zQ2uCXwdiYBqql49I2Wzy4s8WfhoYPRnWON6QHnnw==", "id"=>"6"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/user.rb:12: syntax error, unexpected keyword_true, expecting ')'
+...。') if User.count(:admin true)==1
+...                           ^~~~):
+  
+app/models/user.rb:12: syntax error, unexpected keyword_true, expecting ')'
+app/controllers/application_controller.rb:8:in `current_user'
+app/controllers/application_controller.rb:12:in `login_required'
+Started DELETE "/admin/users/6" for ::1 at 2019-08-16 21:39:40 +0900
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w2nreaeX4kIBmXoX+IIHdprHmMWnprp8eXWXGmaFVJH51zQ2uCXwdiYBqql49I2Wzy4s8WfhoYPRnWON6QHnnw==", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 3.1ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/user.rb:12:in `confirm_none_admin_user'
+app/controllers/admin/users_controller.rb:41:in `destroy'
+Started DELETE "/admin/users/6" for ::1 at 2019-08-16 21:40:14 +0900
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w2nreaeX4kIBmXoX+IIHdprHmMWnprp8eXWXGmaFVJH51zQ2uCXwdiYBqql49I2Wzy4s8WfhoYPRnWON6QHnnw==", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT COUNT({:admin=>true}) FROM "users"[0m
+  ↳ app/models/user.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 9.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near "{"
+LINE 1: SELECT COUNT({:admin=>true}) FROM "users"
+                     ^
+: SELECT COUNT({:admin=>true}) FROM "users"):
+  
+app/models/user.rb:12:in `confirm_none_admin_user'
+app/controllers/admin/users_controller.rb:41:in `destroy'
+Started DELETE "/admin/users/6" for ::1 at 2019-08-16 21:40:49 +0900
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w2nreaeX4kIBmXoX+IIHdprHmMWnprp8eXWXGmaFVJH51zQ2uCXwdiYBqql49I2Wzy4s8WfhoYPRnWON6QHnnw==", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."admin" = $1[0m  [["admin", true]]
+  ↳ app/models/user.rb:12
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/admin/users_controller.rb:41
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 22ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-08-16 21:40:49 +0900
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Redirected to http://localhost:3000/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for ::1 at 2019-08-16 21:40:49 +0900
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "admin") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "admin"], ["email", "admin@example.com"], ["password_digest", "$2a$12$8kmTqVo2SOYVlOWRKBqRK.r8pWhmG7qqnGr/vRHn.3./ElHxpi5B6"], ["created_at", "2019-08-16 21:41:44.790470"], ["updated_at", "2019-08-16 21:41:44.790470"], ["admin", true]]
+  ↳ db/seeds.rb:1
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+Started GET "/login" for ::1 at 2019-08-16 21:41:56 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (12.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 328ms (Views: 320.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/login" for ::1 at 2019-08-16 21:42:01 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w6gxkJJ2B97BQkTTHXLt2n6jenFN1dvhfPoHnQA/0q35Fu7fjcQV6ubalG2dBGc6K0rORY2SwB7UEvMKj7thow==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 227ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-16 21:42:02 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 7], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 7], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (70.2ms)
+Completed 200 OK in 112ms (Views: 96.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-08-16 21:42:04 +0900
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering admin/users/index.html.slim within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/admin/users/index.html.slim:16
+  Rendered admin/users/index.html.slim within layouts/application (24.8ms)
+Completed 200 OK in 89ms (Views: 85.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/users/7" for ::1 at 2019-08-16 21:42:07 +0900
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B7yqAbVwIHkqyM3NeVh+W/U8WlCBaSqTfmxFfe3Erdw9AnVOqsIyTQ1QHXP5LvS7oNXuZEEuMWzWhLHqYkAe0g==", "id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."admin" = $1[0m  [["admin", true]]
+  ↳ app/models/user.rb:12
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/admin/users_controller.rb:41
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/users_controller.rb:41
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 13ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-08-16 21:42:07 +0900
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Redirected to http://localhost:3000/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2019-08-16 21:42:07 +0900
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (10.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for ::1 at 2019-08-16 21:42:18 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hU56DmzNnpo2UPkPRSrcilXRkk6z0I/1C3wtax7kLpu/8KVBc3+MrhHIKbHFXFZqADgmenOXlAqjlNn8kWCdlQ==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "admin") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "admin"], ["email", "admin@example.com"], ["password_digest", "$2a$12$63WQ3viSrkCDRqHvC6tZpeWYhpivJnbMrc1CdV2fCfzJNUOA8on5W"], ["created_at", "2019-08-16 21:42:33.913947"], ["updated_at", "2019-08-16 21:42:33.913947"], ["admin", true]]
+  ↳ db/seeds.rb:1
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
