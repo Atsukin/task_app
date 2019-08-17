@@ -9,10 +9,11 @@ class User < ApplicationRecord
 
   private
   def confirm_none_admin_user
-    if User.where(admin: true).count==1
+    if User.where(admin: true).count == 1
       errors.add(:admin, 'は０にすることはできません。')
+      return false
     else
-      errors.add(:admin, 'は1にすることはできません。')
+      return true
     end
   end
 end
