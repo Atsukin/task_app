@@ -9,15 +9,17 @@ table.table.table-hover
       th= User.human_attribute_name(:name)
       th= User.human_attribute_name(:email)
       th= User.human_attribute_name(:admin)
+      th= User.human_attribute_name(:task_count)
       th= User.human_attribute_name(:create_at)
       th= User.human_attribute_name(:updated_at)
       th
   tbody
-    - @users.each do |user|
+    - @users.preload(:tasks).each do |user|
       tr
         td= link_to user.name, [:admin, user]
         td= user.email
         td= user.admin? ? 'あり' : 'なし'
+        td= user.tasks.count
         td= user.created_at
         td= user.updated_at
         td
