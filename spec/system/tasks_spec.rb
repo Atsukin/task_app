@@ -73,4 +73,6 @@ describe 'タスク管理機能', type: :system do
   end
 end
 
-describe 'ユーザー管理機能'
+describe 'ユーザー管理機能', type: :system do
+
+end

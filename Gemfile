@@ -45,3 +45,4 @@ gem 'rails-i18n'
 gem 'enum_help'
 gem 'kaminari'
 gem 'bcrypt'
+gem "nokogiri", ">= 1.10.4"
