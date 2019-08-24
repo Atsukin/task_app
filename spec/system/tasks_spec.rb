@@ -71,8 +71,13 @@ describe 'タスク管理機能', type: :system do
       end
     end
   end
-end
 
-describe 'ユーザー管理機能', type: :system do
+  describe '削除機能' do
+    let(:login_user){ user_a }
 
+    before do
+      visit task_path(task_a)
+      click_button '削除'
+    end
+  end
 end
