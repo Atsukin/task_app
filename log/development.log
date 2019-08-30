@@ -14494,3 +14494,255 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-08-27 15:47:22 +0900
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-27 15:47:22 +0900
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (21.6ms)
+Completed 200 OK in 384ms (Views: 381.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-27 15:47:37 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"liuGdNhReQtB47aQjdtwEFBEXMe1jjEZzjdm7IgtoE1cZuUx6wRJ7pUTE2DVDS5BaUpuH7Q3cNsjmK8U7Fh+MA==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 374ms (ActiveRecord: 99.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 15:47:37 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (29.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (33.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (244.7ms)
+Completed 200 OK in 351ms (Views: 223.2ms | ActiveRecord: 108.2ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-08-27 15:47:52 +0900
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering admin/users/index.html.slim within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/admin/users/index.html.slim:17
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" IN ($1, $2, $3, $4)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 5], ["user_id", 13]]
+  ↳ app/views/admin/users/index.html.slim:17
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/admin/users/index.html.slim:22
+  Rendered admin/users/index.html.slim within layouts/application (21.9ms)
+Completed 200 OK in 57ms (Views: 50.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-27 15:47:55 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (17.6ms)
+Completed 200 OK in 59ms (Views: 54.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-27 15:55:37 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (20.2ms)
+Completed 200 OK in 71ms (Views: 64.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-27 15:55:38 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (22.8ms)
+Completed 200 OK in 74ms (Views: 61.5ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-27 15:55:39 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (30.5ms)
+Completed 200 OK in 68ms (Views: 60.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-27 15:55:39 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (19.4ms)
+Completed 200 OK in 57ms (Views: 48.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-27 15:55:40 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (13.8ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-08-27 17:41:04 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (15.4ms)
+Completed 200 OK in 62ms (Views: 55.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-08-27 17:41:08 +0900
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering admin/users/index.html.slim within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/admin/users/index.html.slim:17
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" IN ($1, $2, $3, $4)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 5], ["user_id", 13]]
+  ↳ app/views/admin/users/index.html.slim:17
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/admin/users/index.html.slim:22
+  Rendered admin/users/index.html.slim within layouts/application (16.4ms)
+Completed 200 OK in 59ms (Views: 53.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/users/5/edit" for ::1 at 2019-08-27 17:41:18 +0900
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:5
+  Rendering admin/users/edit.html.slim within layouts/application
+  Rendered admin/users/_form.html.slim (16.7ms)
+  Rendered admin/users/edit.html.slim within layouts/application (22.3ms)
+Completed 200 OK in 65ms (Views: 53.3ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/admin/users/5" for ::1 at 2019-08-27 17:41:26 +0900
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdIz3xreTYE4RIdjmTHysSNOX+upTgvnI9lgpwGe1ILnn1CaKYt9ZOy0IpPB56zgGkBtM6j3SiXOdqlfZesK/w==", "user"=>{"name"=>"new user", "email"=>"test@test", "admin"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録する", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/users_controller.rb:32
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "test@test"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:32
+  [1m[36mUser Update (4.9ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "password_digest" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["admin", true], ["password_digest", "$2a$12$pHXSV0bLT51mALKX9CrmSuF2P29ZQ/tQBGvw/84mnx0U1yx/4foKa"], ["updated_at", "2019-08-27 17:41:26.726830"], ["id", 5]]
+  ↳ app/controllers/admin/users_controller.rb:32
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/users_controller.rb:32
+Redirected to http://localhost:3000/admin/users/5
+Completed 302 Found in 246ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/admin/users/5" for ::1 at 2019-08-27 17:41:26 +0900
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admin/users_controller.rb:23
+  Rendering admin/users/show.html.slim within layouts/application
+  Rendered admin/users/show.html.slim within layouts/application (5.3ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-08-27 17:41:30 +0900
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering admin/users/index.html.slim within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/admin/users/index.html.slim:17
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" IN ($1, $2, $3, $4)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 13], ["user_id", 5]]
+  ↳ app/views/admin/users/index.html.slim:17
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/admin/users/index.html.slim:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/admin/users/index.html.slim:22
+  Rendered admin/users/index.html.slim within layouts/application (16.0ms)
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 2.2ms)
+
+
