@@ -16606,3 +16606,180 @@ Processing by Admin::UsersController#index as HTML
 Completed 200 OK in 51ms (Views: 46.1ms | ActiveRecord: 1.9ms)
 
 
+Started GET "/" for ::1 at 2019-08-31 09:32:37 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 33.6ms)
+
+
+  
+ArgumentError (You tried to define a scope named "sort" on the model "Task", but ActiveRecord::Relation already defined an instance method with the same name.):
+  
+app/models/task.rb:12:in `<class:Task>'
+app/models/task.rb:1:in `<top (required)>'
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:32:56 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.7ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:12: formal argument cannot be an instance variable
+  scope :sort, ->(@tasks) do
+                  ^~~~~~):
+  
+app/models/task.rb:12: formal argument cannot be an instance variable
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:34:01 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 3.3ms)
+
+
+  
+ArgumentError (You tried to define a scope named "sort" on the model "Task", but ActiveRecord::Relation already defined an instance method with the same name.):
+  
+app/models/task.rb:12:in `<class:Task>'
+app/models/task.rb:1:in `<top (required)>'
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:34:13 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 3.2ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:12: syntax error, unexpected '[', expecting ')'
+  scope :sort, ->(params[:order]) do
+                        ^
+/Users/kyouakira/task_app/app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/task.rb:12: syntax error, unexpected '[', expecting ')'
+app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:34:23 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.5ms)
+
+
+  
+ArgumentError (You tried to define a scope named "sort" on the model "Task", but ActiveRecord::Relation already defined an instance method with the same name.):
+  
+app/models/task.rb:12:in `<class:Task>'
+app/models/task.rb:1:in `<top (required)>'
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:34:55 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.6ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:12: syntax error, unexpected '[', expecting keyword_do_LAMBDA or tLAMBEG
+  scope :sort, ->params[:order] do
+                       ^
+/Users/kyouakira/task_app/app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/task.rb:12: syntax error, unexpected '[', expecting keyword_do_LAMBDA or tLAMBEG
+app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:35:06 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.4ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:12: syntax error, unexpected '[', expecting ')'
+  scope :sort, ->(params[:order]) do
+                        ^
+/Users/kyouakira/task_app/app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/task.rb:12: syntax error, unexpected '[', expecting ')'
+app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:35:06 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (48.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 90.7ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:12: syntax error, unexpected '[', expecting ')'
+  scope :sort, ->(params[:order]) do
+                        ^
+/Users/kyouakira/task_app/app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/task.rb:12: syntax error, unexpected '[', expecting ')'
+app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:35:20 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 4.6ms)
+
+
+  
+ArgumentError (You tried to define a scope named "sort" on the model "Task", but ActiveRecord::Relation already defined an instance method with the same name.):
+  
+app/models/task.rb:12:in `<class:Task>'
+app/models/task.rb:1:in `<top (required)>'
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:35:28 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 3.9ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:12: syntax error, unexpected tSYMBEG, expecting ')'
+  scope :sort, ->(:order) do
+                  ^
+/Users/kyouakira/task_app/app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/task.rb:12: syntax error, unexpected tSYMBEG, expecting ')'
+app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:36:36 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 3.4ms)
+
+
+  
+SyntaxError (/Users/kyouakira/task_app/app/models/task.rb:12: syntax error, unexpected ':', expecting keyword_do_LAMBDA or tLAMBEG
+  scope :sort, ->:order do
+                 ^
+/Users/kyouakira/task_app/app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/task.rb:12: syntax error, unexpected ':', expecting keyword_do_LAMBDA or tLAMBEG
+app/models/task.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2019-08-31 09:37:01 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (42.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (72.1ms)
+Completed 200 OK in 146ms (Views: 79.3ms | ActiveRecord: 48.2ms)
+
+
