@@ -8,4 +8,8 @@ class Task < ApplicationRecord
 
   enum status: { notstart: 0, launch: 1, complete: 2 }
   enum priority: { high: 0, middle: 1, low: 2 }
+
+  def sort(order)
+    self.order(order.to_sym :desc)
+  end
 end

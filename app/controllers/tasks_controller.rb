@@ -1,27 +1,9 @@
 class TasksController < ApplicationController
   def index
-    @tasks = current_user.tasks
-
-    search_word = params[:word].presence
-    @tasks = @tasks.where("name LIKE ?","%#{search_word}") if search_word
-    if params[:status].present?
-      @tasks = @tasks.where(status: params[:status])
-    else
-      @tasks = @tasks.all
-    end
-
-    case params[:order]
-      when 'limit'
-        @tasks = @tasks.order(limit: :desc)
-      when 'created_at'
-        @tasks = @tasks.order(create_at: :desc)
-      when 'status'
-        @tasks = @tasks.order(status: :desc)
-      when 'priority'
-        @tasks = @tasks.order(priority: :asc)
-    end
-
-    @tasks = @tasks.order(created_at: :desc).page(params[:page])
+    @tasks = current_user.tasks.sort(params[:order])
+    @tasks = @tasks.where('name LIKE ?', "%#{params[:word]}") if params[:word].present?
+    @tasks = @tasks.where(status: params[:status]) if params[:status].present?
+    @tasks = current_user.tasks.page(params[:page])
   end
 
   def show
