@@ -1,9 +1,9 @@
 class TasksController < ApplicationController
   def index
-    @tasks = current_user.tasks.sort(params[:order])
-    @tasks = @tasks.where('name LIKE ?', "%#{params[:word]}") if params[:word].present?
+    @tasks = params[:order].present? ? current_user.tasks.order("#{params[:order].to_sym} DESC") : current_user.tasks
+    @tasks = @tasks.where('name LIKE ?', "%#{params[:word]}") if params[:word].presence
     @tasks = @tasks.where(status: params[:status]) if params[:status].present?
-    @tasks = current_user.tasks.page(params[:page])
+    @tasks = @tasks.page(params[:page])
   end
 
   def show
@@ -50,7 +50,7 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:name,:description,:limit,:status, { label_ids: [] })
+    params.require(:task).permit(:name,:description,:expiration,:status,:priority, { label_ids: [] })
   end
 
 end

@@ -22,9 +22,9 @@ table.table.table-chromedriver
   thread.thread-default
     tr
       th= Task.human_attribute_name(:name)
-      th= link_to :create_at, root_path(order: :create_at)
-      th= link_to :limit, root_path(order: :limit)
-      th= Task.human_attribute_name(:status)
+      th= link_to :created_at, root_path(order: :created_at)
+      th= link_to :expiration, root_path(order: :expiration)
+      th= link_to :status, root_path(order: :status)
       th= link_to Task.human_attribute_name(:priority), root_path(order: :priority)
       th
   tbody
@@ -32,7 +32,7 @@ table.table.table-chromedriver
       tr
         td= link_to task.name, task_path(task)
         td= task.created_at
-        td= task.limit
+        td= task.expiration
         td= task.status_i18n
         td= task.priority_i18n
         td
