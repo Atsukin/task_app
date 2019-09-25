@@ -23140,3 +23140,70 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 58ms (Views: 50.2ms | ActiveRecord: 3.5ms)
 
 
+Started GET "/" for ::1 at 2019-09-15 17:53:09 +0900
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-09-15 17:53:09 +0900
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (18.2ms)
+Completed 200 OK in 379ms (Views: 377.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-09-15 17:53:16 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0hh4K1mUZZSbvbbHEI9a8MukgBLeqDT31VTYV3L4YS+XesaEw0JDcbIRsK6MJSclzAMBWmLaGzmuT9uqSnmzg==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 373ms (ActiveRecord: 95.8ms)
+
+
+Started GET "/" for ::1 at 2019-09-15 17:53:17 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (26.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (714.5ms)
+Completed 200 OK in 812ms (Views: 716.6ms | ActiveRecord: 73.3ms)
+
+
+Started GET "/tasks/new" for ::1 at 2019-09-15 17:53:23 +0900
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/new.html.slim within layouts/application
+  [1m[36mLabel Load (41.9ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/views/tasks/_form.html.slim:24
+  Rendered tasks/_form.html.slim (136.1ms)
+  Rendered tasks/new.html.slim within layouts/application (141.0ms)
+Completed 200 OK in 175ms (Views: 125.0ms | ActiveRecord: 45.8ms)
+
+
+Started GET "/tasks" for ::1 at 2019-09-15 17:53:26 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (21.6ms)
+Completed 200 OK in 56ms (Views: 50.7ms | ActiveRecord: 1.6ms)
+
+
