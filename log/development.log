@@ -23734,3 +23734,53 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 373ms (Views: 371.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-11-01 20:27:30 +0900
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyouakira/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-01 20:27:31 +0900
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (33.3ms)
+Completed 200 OK in 392ms (Views: 389.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-01 20:27:46 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYZ02qitsm/NvhXKJj1JDON6C9DGFc1BwL2ni4XmQuKZUk6wyWamw4+SdayD+eUEVyLAw/VEHmY4q5oGPFnb3w==", "session"=>{"email"=>"admim@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admim@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8
+  Rendering sessions/new.html.slim within layouts/application
+  Rendered sessions/new.html.slim within layouts/application (3.1ms)
+Completed 200 OK in 96ms (Views: 33.8ms | ActiveRecord: 33.9ms)
+
+
+Started POST "/login" for ::1 at 2019-11-01 20:27:52 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C58E9mkE7C0WWcHj88nIUs3eRgXXpBEmafpgIoaZmfwLSz6cCM/4gVR1oYVWDWRaeYaNFuT1wgGR7F2vPyYAwQ==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 260ms (ActiveRecord: 27.9ms)
+
+
+Started GET "/" for ::1 at 2019-11-01 20:27:53 +0900
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[35m (19.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/views/tasks/index.html.slim:18
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3) subquery_for_count[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:19
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 13], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.slim:31
+  Rendered tasks/index.html.slim within layouts/application (965.8ms)
+Completed 200 OK in 1045ms (Views: 975.9ms | ActiveRecord: 46.7ms)
+
+
